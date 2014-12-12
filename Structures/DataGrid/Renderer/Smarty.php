@@ -351,7 +351,7 @@ class Structures_DataGrid_Renderer_Smarty extends Structures_DataGrid_Renderer
 
             $this->_smarty->assign("{$p}datagrid", $this->_getReference());
 
-            $this->_smarty->register_function("{$p}getPaging",
+            $this->_smarty->registerPlugin('function',"{$p}getPaging",
                 array($this, 'smartyGetPaging'));
         } else {
             $this->_data["{$p}datagrid"] = $this->_getReference();
