@@ -113,7 +113,7 @@ class Structures_DataGrid_DataSource_XML extends
         }
 
         $this->doc = $this->_loadDocument($xml);
-        if (PEAR::isError($this->doc)) {
+        if (MDB2::isError($this->doc)) {
             return $this->doc;
         }
 

@@ -12,7 +12,7 @@ $options = array(
 );
 $feed = 'http://www.php.net/feed.atom';
 $test = $datagrid->bind($feed, $options, 'XML');
-if (PEAR::isError($test)) {
+if (MDB2::isError($test)) {
     exit($test->getMessage()); 
 }
 

@@ -146,7 +146,7 @@ class Structures_DataGrid_DataSource_DBQuery
             $result = $this->_handle->limitQuery($query, $offset, $limit);
         }
 
-        if (PEAR::isError($result)) {
+        if (MDB2::isError($result)) {
             return $result;
         }
 
@@ -197,7 +197,7 @@ class Structures_DataGrid_DataSource_DBQuery
     function _getRecordsNum($query)
     {
         $result = $this->_handle->query($query);
-        if (PEAR::isError($result)) {
+        if (MDB2::isError($result)) {
             return $result;
         }
         return $result->numRows();

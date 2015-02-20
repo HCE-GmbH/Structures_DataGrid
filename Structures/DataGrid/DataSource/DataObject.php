@@ -282,7 +282,7 @@ class Structures_DataGrid_DataSource_DataObject
             $this->_rowNum = $this->_dataobject->N;
         } else {
             // Caching the number of rows
-            if (PEAR::isError($count = $this->count())) {
+            if (MDB2::isError($count = $this->count())) {
                 return $count;
             } else {
                 $this->_rowNum = $count;
@@ -362,7 +362,7 @@ class Structures_DataGrid_DataSource_DataObject
                             if (isset($links[$field]) &&
                                 isset($this->_dataobject->$field) &&
                                 ($linkedDo = $this->_dataobject->getLink($field)) &&
-                                !PEAR::isError($linkedDo)) {
+                                !MDB2::isError($linkedDo)) {
                                 if ($this->_options['link_keep_key']) {
                                     $rec["{$field}__key"] = $rec[$field];
                                 }

@@ -367,7 +367,7 @@ XML;
         $this->catchPearError = true;
         $this->suppressPhpWarnings();
         $error = $this->datasource->bind($xml);
-        $this->assertTrue(PEAR::isError($error));
+        $this->assertTrue(MDB2::isError($error));
     }
 
     function testXPathNamespace()

@@ -15,14 +15,14 @@ $form->addElement('submit', 'submit', 'Save');
 
 // prepare the DataGrid
 $dg =& new Structures_DataGrid();
-if (PEAR::isError($dg)) {
+if (MDB2::isError($dg)) {
    die($dg->getMessage() . '<br />' . $dg->getDebugInfo());
 }
 
 // bind some data (e.g. via a SQL query and MDB2)
 $error = $dg->bind('SELECT * FROM news',
                    array('dsn' => 'mysql://user:password@server/database'));
-if (PEAR::isError($error)) {
+if (MDB2::isError($error)) {
    die($error->getMessage() . '<br />' . $error->getDebugInfo());
 }
 
@@ -45,7 +45,7 @@ $tpl = '';
 
 // generate the HTML table and add it to the template string
 $tpl .= $dg->getOutput('CheckableHTMLTable', $rendererOptions);
-if (PEAR::isError($tpl)) {
+if (MDB2::isError($tpl)) {
    die($tpl->getMessage() . '<br />' . $tpl->getDebugInfo());
 }
 

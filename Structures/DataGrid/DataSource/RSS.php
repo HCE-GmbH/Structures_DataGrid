@@ -83,7 +83,7 @@ class Structures_DataGrid_DataSource_RSS extends
         
         $rss = new XML_RSS($file);
         $result = $rss->parse();
-        if (PEAR::isError($result)) { 
+        if (MDB2::isError($result)) {
             return $result;
         }
         

@@ -445,19 +445,19 @@ class Structures_DataGrid
         }
 
         $type = Structures_DataGrid::_correctDriverName($type, 'DataSource');
-        if (PEAR::isError($type)) {
+        if (MDB2::isError($type)) {
             return $type;
         }
 
         $className = "Structures_DataGrid_DataSource_$type";
 
-        if (PEAR::isError($driver = Structures_DataGrid::loadDriver($className))) {
+        if (MDB2::isError($driver = Structures_DataGrid::loadDriver($className))) {
             return $driver;
         }
         
         $result = $driver->bind($source, $options);
        
-        if (PEAR::isError($result)) {
+        if (MDB2::isError($result)) {
             return $result;
         } else {
             return $driver;
@@ -482,13 +482,13 @@ class Structures_DataGrid
     function rendererFactory($type, $options = array())
     {
         $type = Structures_DataGrid::_correctDriverName($type, 'Renderer');
-        if (PEAR::isError($type)) {
+        if (MDB2::isError($type)) {
             return $type;
         }
 
         $className = "Structures_DataGrid_Renderer_$type";
 
-        if (PEAR::isError($driver = Structures_DataGrid::loadDriver($className))) {
+        if (MDB2::isError($driver = Structures_DataGrid::loadDriver($className))) {
             return $driver;
         }        
 
@@ -524,13 +524,13 @@ class Structures_DataGrid
             } else {
                 $result = $this->setRenderer($renderer);
             }
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 $this->_restoreRenderer();
                 return $result;
             }
         } else if (!isset($this->_renderer)) {
             $result = $this->setRenderer(DATAGRID_RENDER_DEFAULT);
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
         }
@@ -542,13 +542,13 @@ class Structures_DataGrid
 
         if (!$this->_renderer->isBuilt()) {
             $result = $this->build();
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
         }
 
         $result = $this->_renderer->render();
-        if (PEAR::isError($result)) {
+        if (MDB2::isError($result)) {
             if ($result->getCode() == DATAGRID_ERROR_UNSUPPORTED) {
                 $type = is_null($this->_rendererType) 
                         ? get_class($this->_renderer)
@@ -587,7 +587,7 @@ class Structures_DataGrid
             $this->_saveRenderer();
             
             $test = $this->setRenderer($type);
-            if (PEAR::isError($test)) {
+            if (MDB2::isError($test)) {
                 $this->_restoreRenderer();
                 return $test;
             }
@@ -602,13 +602,13 @@ class Structures_DataGrid
         
         if (!$this->_renderer->isBuilt()) {
             $result = $this->build();
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
         }
         
         $output = $this->_renderer->getOutput();
-        if (PEAR::isError($output) && $output->getCode() == DATAGRID_ERROR_UNSUPPORTED) {
+        if (MDB2::isError($output) && $output->getCode() == DATAGRID_ERROR_UNSUPPORTED) {
             $type = is_null($this->_rendererType) 
                     ? get_class($this->_renderer)
                     : $this->_rendererType;
@@ -667,7 +667,7 @@ class Structures_DataGrid
     function setRenderer($type, $options = array())
     {
         $renderer = $this->rendererFactory($type, $options);
-        if (PEAR::isError($renderer)) {
+        if (MDB2::isError($renderer)) {
             return $renderer;
         }
         $this->_rendererType = $type;
@@ -824,7 +824,7 @@ class Structures_DataGrid
             or !is_a($this->_renderer, "Structures_DataGrid_Renderer_$type")) {
             /* No, then load the right driver */
             $this->_saveRenderer();
-            if (PEAR::isError($test = $this->setRenderer($type, $options))) {
+            if (MDB2::isError($test = $this->setRenderer($type, $options))) {
                 $this->_restoreRenderer();
                 return $test;
             }
@@ -834,7 +834,7 @@ class Structures_DataGrid
         }
 
         $test = $this->_renderer->setContainer($container);
-        if (PEAR::isError($test)) {
+        if (MDB2::isError($test)) {
             if ($test->getCode() == DATAGRID_ERROR_UNSUPPORTED) {
                 $this->_restoreRenderer();
                 return PEAR::raiseError("The $type driver does not support the " . 
@@ -847,7 +847,7 @@ class Structures_DataGrid
 
         if (!$this->_renderer->isBuilt()) {
             $result = $this->build();
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
         }
@@ -1172,7 +1172,7 @@ class Structures_DataGrid
     {
         $source = Structures_DataGrid::dataSourceFactory($container, $options,
                                                           $type);
-        if (!PEAR::isError($source)) {
+        if (!MDB2::isError($source)) {
             return $this->bindDataSource($source);
         } else {
             return $source;
@@ -1191,7 +1191,7 @@ class Structures_DataGrid
         if (is_subclass_of($source, 'structures_datagrid_datasource')) {
             $this->_dataSource = $source;
             $result = $this->fetchDataSource();
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
             if ($columnSet = $this->_dataSource->getColumns()) {
@@ -1271,7 +1271,7 @@ class Structures_DataGrid
                 $recordSet = $this->_dataSource->fetch($startRow, $limit);
             }
 
-            if (PEAR::isError($recordSet)) {
+            if (MDB2::isError($recordSet)) {
                 return $recordSet;
             } else {
                 $this->recordSet = $recordSet;
@@ -1554,7 +1554,7 @@ class Structures_DataGrid
             if (is_null($this->_bufferSize)) {
                 $this->_prepareColumnsAndRenderer();
                 $result = $this->_renderer->build($this->recordSet, 0, true);
-                if (PEAR::isError($result)) {
+                if (MDB2::isError($result)) {
                     return $result;
                 }
             } else {
@@ -1573,7 +1573,7 @@ class Structures_DataGrid
                     } else {
                         // we don't fetch on the first iteration because a chunk
                         // of data has already been fetched by bindDataSource()
-                        if (PEAR::isError($result = $this->fetchDataSource($row))) {
+                        if (MDB2::isError($result = $this->fetchDataSource($row))) {
                             unset($this->_dataSource);
                             return $result;
                         }
@@ -1591,7 +1591,7 @@ class Structures_DataGrid
                     $startRow = $row - ($this->page - 1) * $this->rowLimit;
                     $result = $this->_renderer->build($this->recordSet,
                                                       $startRow, $eof);
-                    if (PEAR::isError($result)) {
+                    if (MDB2::isError($result)) {
                         return $result;
                     }
                 }

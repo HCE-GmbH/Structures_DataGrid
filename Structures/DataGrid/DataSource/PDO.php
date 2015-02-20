@@ -276,7 +276,7 @@ class Structures_DataGrid_DataSource_PDO
     function _getRecordsNum($query)
     {
         $records = $this->_getRecords($query, null, 0);
-        if (PEAR::isError($records)) {
+        if (MDB2::isError($records)) {
             return $records;
         }
         return count($records);

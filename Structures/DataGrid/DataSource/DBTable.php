@@ -184,7 +184,7 @@ class Structures_DataGrid_DataSource_DBTable
                             $sortString, 
                             $offset, $limit,
                             $this->_options['params']);
-        if (PEAR::isError($recordSet)) {
+        if (MDB2::isError($recordSet)) {
             return $recordSet;
         }
 
@@ -215,7 +215,7 @@ class Structures_DataGrid_DataSource_DBTable
                                              $this->_options['params']);
         // if we've got a number of records, save it to avoid running the same
         // query multiple times
-        if (!PEAR::isError($count)) {
+        if (!MDB2::isError($count)) {
             $this->_rowNum = $count;
         }
         return $count;
@@ -275,7 +275,7 @@ class Structures_DataGrid_DataSource_DBTable
     function insert($data)
     {
         $result = $this->_object->insert($data);
-        if (PEAR::isError($result)) {
+        if (MDB2::isError($result)) {
             return $result;
         }
         return true;
@@ -293,7 +293,7 @@ class Structures_DataGrid_DataSource_DBTable
     function update($key, $data)
     {
         $primary_key = $this->getPrimaryKey();
-        if (PEAR::isError($primary_key)) {
+        if (MDB2::isError($primary_key)) {
             return $primary_key;
         }
         $where = array();
@@ -302,7 +302,7 @@ class Structures_DataGrid_DataSource_DBTable
         }
         $where_str = join(' AND ', $where);
         $result = $this->_object->update($data, $where_str);
-        if (PEAR::isError($result)) {
+        if (MDB2::isError($result)) {
             return $result;
         }
         return true;
@@ -318,7 +318,7 @@ class Structures_DataGrid_DataSource_DBTable
     function delete($key)
     {
         $primary_key = $this->getPrimaryKey();
-        if (PEAR::isError($primary_key)) {
+        if (MDB2::isError($primary_key)) {
             return $primary_key;
         }
         $where = array();
@@ -327,7 +327,7 @@ class Structures_DataGrid_DataSource_DBTable
         }
         $where_str = join(' AND ', $where);
         $result = $this->_object->delete($where_str);
-        if (PEAR::isError($result)) {
+        if (MDB2::isError($result)) {
             return $result;
         }
         return true;

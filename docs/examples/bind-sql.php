@@ -7,7 +7,7 @@ $options = array('dsn' => 'mysql://user:password@host/db_name');
 $test = $datagrid->bind('SELECT * FROM my_table', $options);
 
 // Print binding error if any
-if (PEAR::isError($test)) {
+if (MDB2::isError($test)) {
     echo $test->getMessage(); 
 }
 ?>

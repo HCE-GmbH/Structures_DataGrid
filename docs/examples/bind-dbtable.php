@@ -55,7 +55,7 @@ $options = array('view' => 'list', 'where' => 'YEAR(signdate) = 2100');
 $test = $datagrid->bind($guestbook, $options);
 
 // print binding error if any
-if (PEAR::isError($test)) {
+if (MDB2::isError($test)) {
     echo $test->getMessage(); 
 }
 ?>

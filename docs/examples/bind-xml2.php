@@ -27,7 +27,7 @@ $options = array('path' => '/response/records/*');
 $test = $datagrid->bind($xml, $options, 'XML');
 
 // Print binding error if any
-if (PEAR::isError($test)) {
+if (MDB2::isError($test)) {
     echo $test->getMessage(); 
 }
 ?>

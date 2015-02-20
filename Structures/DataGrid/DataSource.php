@@ -555,7 +555,7 @@ class Structures_DataGrid_DataSource_SQLQuery
                 $dbOptions = $options['db_options'];
             }
             $this->_handle = $this->_connect();
-            if (PEAR::isError($this->_handle)) {
+            if (MDB2::isError($this->_handle)) {
                 throw new Structures_DataGrid_Exception(
                     'Could not create connection: ' .
                     $this->_handle->getMessage() . ', ' .
@@ -627,7 +627,7 @@ class Structures_DataGrid_DataSource_SQLQuery
         //FIXME: What about SQL injection ?
         $recordSet = $this->_getRecords($query, $limit, $offset);
 
-        if (PEAR::isError($recordSet)) {
+        if (MDB2::isError($recordSet)) {
             return $recordSet;
         }
 
@@ -668,7 +668,7 @@ class Structures_DataGrid_DataSource_SQLQuery
             // GROUP BY, DISTINCT, UNION and subqueries are special cases
             // ==> use the normal query and then numRows()
             $count = $this->_getRecordsNum($this->_query);
-            if (PEAR::isError($count)) {
+            if (MDB2::isError($count)) {
                 return $count;
             }
         } else {
@@ -687,7 +687,7 @@ class Structures_DataGrid_DataSource_SQLQuery
         }
         // if we've got a number of records, save it to avoid running the same
         // query multiple times
-        if (!PEAR::isError($count)) {
+        if (!MDB2::isError($count)) {
             $this->_rowNum = $count;
         }
         return $count;

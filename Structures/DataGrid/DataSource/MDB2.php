@@ -103,7 +103,7 @@ class Structures_DataGrid_DataSource_MDB2
     function bind($query, $options = array())
     {
         $result = parent::bind($query, $options);
-        if (!PEAR::isError($result)) {
+        if (!MDB2::isError($result)) {
             $this->_handle->loadModule('Extended', null, false);
         }
         return $result;
@@ -172,7 +172,7 @@ class Structures_DataGrid_DataSource_MDB2
                             $limit, $offset);
         }
 
-        if (PEAR::isError($result)) {
+        if (MDB2::isError($result)) {
             return $result;
         }
 
@@ -229,7 +229,7 @@ class Structures_DataGrid_DataSource_MDB2
         if ($this->_isConnection($this->_handle)) {
   
             $result = $this->_handle->query($query);
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
             return $result->numRows();

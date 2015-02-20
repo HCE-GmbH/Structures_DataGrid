@@ -630,7 +630,7 @@ class Structures_DataGrid_Renderer
         $rowNum = count($records);
         for ($row = 0; $row < $rowNum; $row++) {
             $result = $this->buildRow($row + $startRow, $records[$row]);
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
         }
@@ -638,7 +638,7 @@ class Structures_DataGrid_Renderer
         if ($eof && $this->_options['fillWithEmptyRows'] && !is_null($this->_pageLimit)) {
             for ($row = $this->_recordsNum; $row < $this->_pageLimit; $row++) {
                 $result = $this->buildEmptyRow($row);
-                if (PEAR::isError($result)) {
+                if (MDB2::isError($result)) {
                     return $result;
                 }
             }
@@ -658,7 +658,7 @@ class Structures_DataGrid_Renderer
     {
         for ($row = 0; $row < $this->_recordsNum; $row++) {
             $result = $this->buildRow($row, $this->_records[$row]);
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
         }
@@ -666,7 +666,7 @@ class Structures_DataGrid_Renderer
         if ($this->_options['fillWithEmptyRows'] && !is_null($this->_pageLimit)) {
             for ($row = $this->_recordsNum; $row < $this->_pageLimit; $row++) {
                 $result = $this->buildEmptyRow($row);
-                if (PEAR::isError($result)) {
+                if (MDB2::isError($result)) {
                     return $result;
                 }
             }
@@ -833,13 +833,13 @@ class Structures_DataGrid_Renderer
             $this->_columnsNum = count($this->_columns);
 
             $result = $this->init();
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
 
             if ($this->_options['buildHeader']) {
                 $result = $this->buildHeader($this->_columns);
-                if (PEAR::isError($result)) {
+                if (MDB2::isError($result)) {
                     return $result;
                 }
             }
@@ -870,7 +870,7 @@ class Structures_DataGrid_Renderer
             $this->_records = array_merge($this->_records, $chunk);
         } else {
             $result = $this->streamBody($chunk, $startRow, $eof);
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
         }
@@ -879,27 +879,27 @@ class Structures_DataGrid_Renderer
         if ($eof) {
             if (is_null($this->_pageLimit)) {
                 $result = $this->_pageLimit = $this->_recordsNum;
-                if (PEAR::isError($result)) {
+                if (MDB2::isError($result)) {
                     return $result;
                 }
             }
 
             if (!$this->hasFeature('streaming')) {
                 $result = $this->buildBody();
-                if (PEAR::isError($result)) {
+                if (MDB2::isError($result)) {
                     return $result;
                 }
             }
 
             if ($this->_options['buildFooter']) {
                 $result = $this->buildFooter();
-                if (PEAR::isError($result)) {
+                if (MDB2::isError($result)) {
                     return $result;
                 }
             }
 
             $result = $this->finalize();
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
 
@@ -945,7 +945,7 @@ class Structures_DataGrid_Renderer
             echo $this->flatten();
         } else {
             $result = $this->build(array(), 0);
-            if (PEAR::isError($result)) {
+            if (MDB2::isError($result)) {
                 return $result;
             }
         }

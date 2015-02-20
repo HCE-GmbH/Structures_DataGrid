@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="44a66cf9-f056-406d-8512-8863a1489bfa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structures/DataGrid/DataSource/DBQuery.php" afterPath="$PROJECT_DIR$/Structures/DataGrid/DataSource/DBQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structures/DataGrid/DataSource/DBTable.php" afterPath="$PROJECT_DIR$/Structures/DataGrid/DataSource/DBTable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structures/DataGrid.php" afterPath="$PROJECT_DIR$/Structures/DataGrid.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structures/DataGrid/DataSource/DataObject.php" afterPath="$PROJECT_DIR$/Structures/DataGrid/DataSource/DataObject.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structures/DataGrid/DataSource.php" afterPath="$PROJECT_DIR$/Structures/DataGrid/DataSource.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DataSourceXMLTest.php" afterPath="$PROJECT_DIR$/tests/DataSourceXMLTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structures/DataGrid/DataSource/MDB2.php" afterPath="$PROJECT_DIR$/Structures/DataGrid/DataSource/MDB2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structures/DataGrid/DataSource/PDO.php" afterPath="$PROJECT_DIR$/Structures/DataGrid/DataSource/PDO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structures/DataGrid/DataSource/RSS.php" afterPath="$PROJECT_DIR$/Structures/DataGrid/DataSource/RSS.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structures/DataGrid/Renderer.php" afterPath="$PROJECT_DIR$/Structures/DataGrid/Renderer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structures/DataGrid/DataSource/XML.php" afterPath="$PROJECT_DIR$/Structures/DataGrid/DataSource/XML.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/examples/bind-atom.php" afterPath="$PROJECT_DIR$/docs/examples/bind-atom.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/examples/bind-dbtable.php" afterPath="$PROJECT_DIR$/docs/examples/bind-dbtable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/examples/bind-sql.php" afterPath="$PROJECT_DIR$/docs/examples/bind-sql.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/examples/bind-xml1.php" afterPath="$PROJECT_DIR$/docs/examples/bind-xml1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/examples/bind-xml2.php" afterPath="$PROJECT_DIR$/docs/examples/bind-xml2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/examples/checkablehtmltable.php" afterPath="$PROJECT_DIR$/docs/examples/checkablehtmltable.php" />
+    </list>
+    <ignored path="Structures_DataGrid.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Structures_DataGrid" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Structures/DataGrid/DataSource.php" />
+        <option value="$PROJECT_DIR$/Structures/DataGrid/DataSource/DBQuery.php" />
+        <option value="$PROJECT_DIR$/Structures/DataGrid/DataSource/DBTable.php" />
+        <option value="$PROJECT_DIR$/Structures/DataGrid/DataSource/DataObject.php" />
+        <option value="$PROJECT_DIR$/Structures/DataGrid/DataSource/PDO.php" />
+        <option value="$PROJECT_DIR$/Structures/DataGrid/DataSource/RSS.php" />
+        <option value="$PROJECT_DIR$/Structures/DataGrid/DataSource/XML.php" />
+        <option value="$PROJECT_DIR$/docs/examples/bind-atom.php" />
+        <option value="$PROJECT_DIR$/docs/examples/bind-dbtable.php" />
+        <option value="$PROJECT_DIR$/docs/examples/bind-sql.php" />
+        <option value="$PROJECT_DIR$/docs/examples/bind-xml1.php" />
+        <option value="$PROJECT_DIR$/docs/examples/bind-xml2.php" />
+        <option value="$PROJECT_DIR$/docs/examples/checkablehtmltable.php" />
+        <option value="$PROJECT_DIR$/tests/DataSourceXMLTest.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1928" />
+    <option name="height" value="1156" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Structures_DataGrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Structures_DataGrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Structures_DataGrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="last_opened_file_path" value="C:/cygwin64/home/martin.kuster/storm" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44a66cf9-f056-406d-8512-8863a1489bfa" name="Default" comment="" />
+      <created>1424449173761</created>
+      <option name="number" value="Default" />
+      <updated>1424449173761</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-4" y="-4" width="1928" height="1156" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905138" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Structures/DataGrid/DataSource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.038462" vertical-offset="9260" max-vertical-offset="13651">
+          <caret line="557" column="16" selection-start-line="557" selection-start-column="16" selection-end-line="557" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Structures/DataGrid/DataSource/DBQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.346154" vertical-offset="1585" max-vertical-offset="2941">
+          <caret line="148" column="12" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Structures/DataGrid/DataSource/DBTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.346154" vertical-offset="2231" max-vertical-offset="5151">
+          <caret line="186" column="12" selection-start-line="186" selection-start-column="12" selection-end-line="186" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Structures/DataGrid/DataSource/DataObject.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.346154" vertical-offset="3897" max-vertical-offset="9027">
+          <caret line="284" column="16" selection-start-line="284" selection-start-column="16" selection-end-line="284" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/DataSourceXMLTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.509375" vertical-offset="5325" max-vertical-offset="6426">
+          <caret line="385" column="65" selection-start-line="385" selection-start-column="65" selection-end-line="385" selection-end-column="65" />
+          <folding>
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225090" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/examples/checkablehtmltable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22604166" vertical-offset="72" max-vertical-offset="1190">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/examples/bind-xml2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51354164" vertical-offset="0" max-vertical-offset="960">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <marker date="1424449225101" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225101" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225101" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424449225101" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/examples/bind-xml1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44270834" vertical-offset="0" max-vertical-offset="960">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/examples/bind-sql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.159375" vertical-offset="0" max-vertical-offset="960">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/examples/bind-dbtable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.840625" vertical-offset="162" max-vertical-offset="1122">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/examples/bind-atom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24791667" vertical-offset="0" max-vertical-offset="960">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Structures/DataGrid/DataSource/XML.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22604166" vertical-offset="1024" max-vertical-offset="10268">
+          <caret line="115" column="12" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Structures/DataGrid/DataSource/RSS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6635417" vertical-offset="94" max-vertical-offset="1054">
+          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Structures/DataGrid/DataSource/PDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71666664" vertical-offset="3324" max-vertical-offset="4284">
+          <caret line="278" column="12" selection-start-line="278" selection-start-column="12" selection-end-line="278" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
